@@ -8,7 +8,15 @@ namespace exercise_20
     {
 
       // Write your code here:
-
+      Console.WriteLine("Give the first number!");
+      string first = Console.ReadLine();
+      int firstNumber = Convert.ToInt32(first);
+      Console.WriteLine("Give the second number!");
+      string second = Console.ReadLine();
+      int secondNumber = Convert.ToInt32(second);
+      
+      int sum = firstNumber * secondNumber;
+      Console.WriteLine(firstNumber + " * " + secondNumber + " = " + sum);
     }
   }
 }
