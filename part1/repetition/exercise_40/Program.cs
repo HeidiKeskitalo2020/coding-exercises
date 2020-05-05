@@ -24,8 +24,7 @@ namespace exercise_40
         }
         sum = sum + number;
         amount++;
-        
-        
+                
       }  
       Console.WriteLine("Total sum of numbers: " + sum);
       Console.WriteLine("Total amount of numbers: " + amount);
