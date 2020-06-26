@@ -8,7 +8,11 @@ namespace exercise_41
     {
 
       // Write your code here:
+      int first = Convert.ToInt32(Console.ReadLine());
       
+      int multible = first * first;
+
+      Console.WriteLine(multible);
     }
   }
 }
