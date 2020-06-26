@@ -13,7 +13,7 @@ namespace exercise_48
       int amount = 0;
       int even = 0;
       int odd = 0;
-      
+
       while (true)
       {
         int number = Convert.ToInt32(Console.ReadLine());
@@ -34,7 +34,6 @@ namespace exercise_48
           odd++;
         }
       }
-      
       Console.WriteLine("Thx! Bye!");
       Console.WriteLine("Sum: " + sum);
       Console.WriteLine("Numbers: " + amount);
