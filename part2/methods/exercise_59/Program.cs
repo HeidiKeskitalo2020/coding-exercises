@@ -6,7 +6,7 @@ namespace exercise_59
   {
     public static void Main(String[] args)
     {
-      int answer = Greatest(2, 7, 3);
+      int answer = Greatest(38, 8, 14);
       Console.WriteLine("Greatest: " + answer);
     }
 
@@ -14,7 +14,7 @@ namespace exercise_59
     public static int Greatest(int number1, int number2, int number3) 
     {
       int answer = 0;
-      if (number1 > number2 && number2 > number3)
+      if (number1 > number2 && number1 > number3)
       {
         answer = number1;
       }
