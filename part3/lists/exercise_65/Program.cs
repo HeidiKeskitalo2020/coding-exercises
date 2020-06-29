@@ -7,7 +7,6 @@ namespace exercise_65
   {
     public static void Main(string[] args)
     {
-      int amount = 0;
 
       List<string> list = new List<string>();
       while (true)
@@ -17,10 +16,9 @@ namespace exercise_65
         {
           break;
         }
-        amount++;
         list.Add(input);
       }
-      Console.WriteLine("In total: " + amount);
+      Console.WriteLine("In total: " + list.Count);
     }
   }
 }
