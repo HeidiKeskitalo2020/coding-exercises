@@ -28,8 +28,22 @@ namespace exercise_75
 
       public static void PrintNumbersInRange(List<int> numbers, int lowerLimit, int upperLimit)
       {
-        Tähän koodia!
-      }
+        //Tähän koodia!
+        foreach(int number in numbers)
+        {
+          if (number >= lowerLimit && number <= upperLimit)
+          {
+            Console.WriteLine(number);
+          }
+        }
+        /*for (int i = 0; i < numbers.Count; i++) 
+        {
+          int number = numbers[i];
+          Console.WriteLine(numbers);
+          // alternatively: Console.WriteLine(numbers[i]);
+        }*/
+        
+      
     }
   }
 }
