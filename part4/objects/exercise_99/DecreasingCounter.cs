@@ -20,12 +20,18 @@ namespace exercise_99
     {
       // write the method implementation here
       // the aim is to decrement the value of the counter by one
-
+      if (this.value > 0)
+      {
+        this.value = value -1;
+      }
     }
 
     public void Reset() {
       // write the method implementation here∑
-
+      if (this.value > 0)
+      {
+        this.value = 0;
+      }
     }
   }
 }
