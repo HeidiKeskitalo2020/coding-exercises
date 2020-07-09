@@ -12,7 +12,7 @@ namespace exercise_109
       card.AddMoney(49.99);
       Console.WriteLine(card);
 
-      card.AddMoney(10000.0);
+      card.AddMoney(10000.00);
       Console.WriteLine(card);
 
       card.AddMoney(-10);
@@ -20,7 +20,3 @@ namespace exercise_109
     }
   }
 }
-
-
-
-
