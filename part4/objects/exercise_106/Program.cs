@@ -11,6 +11,3 @@ namespace exercise_106
     }
   }
 }
-
-
-
