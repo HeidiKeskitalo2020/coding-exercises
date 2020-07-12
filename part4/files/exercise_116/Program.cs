@@ -19,6 +19,8 @@ namespace exercise_116
         //string second = pieces[1];
         Console.WriteLine(line);
         //Console.WriteLine(line);
+        //Tehtävän annossa on virhe, se pyyttää printtaamaan 
+        //vain 2 ensimmäistä riviä!
       }
     
     }
