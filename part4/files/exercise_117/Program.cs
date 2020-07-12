@@ -8,8 +8,13 @@ namespace exercise_117
     public static void Main(string[] args)
     {
       // Ask the user for the file name and print the content of the file
-
-      
+      Console.WriteLine("Which file should have its contents printed?");
+      string which = Console.ReadLine();
+      string[] lines = File.ReadAllLines(which);
+      foreach (string line in lines)
+      {
+        Console.WriteLine(line);
+      }
     }
   }
 }
