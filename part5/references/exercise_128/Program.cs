@@ -20,6 +20,6 @@ namespace exercise_128
       Console.WriteLine(manhattanStudioApt.MoreExpensiveThan(atlantaTwoBedroomApt));
       Console.WriteLine(bangorThreeBedroomApt.MoreExpensiveThan(manhattanStudioApt));
     }
-
   }
 }
+
