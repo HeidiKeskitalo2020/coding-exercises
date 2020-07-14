@@ -14,6 +14,9 @@ namespace exercise_127
 
     public Person(string name) : this(name, new Pet("Toothless", "dragon"))
     {
+      this.name = name;
+      
+
     }
 
     public Person() : this("Lilo", new Pet("Stitch", "blue alien"))
@@ -23,7 +26,7 @@ namespace exercise_127
     public override string ToString()
     {
       // MODIFY THE FOLLOWING:
-      return this.name;
+      return this.name + ", has a friend called " + this.pet.name + " (" + this.pet.breed + ")";
       
     }
 
