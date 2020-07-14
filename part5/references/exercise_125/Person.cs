@@ -32,6 +32,5 @@ namespace exercise_125
     {
       return "My name is " + this.name + " and I am " + this.age + " years old. My BMI is " + this.BodyMassIndex();
     }
-
   }
 }
