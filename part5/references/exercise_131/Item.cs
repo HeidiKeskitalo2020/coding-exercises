@@ -18,12 +18,24 @@ namespace exercise_131
 
     public override bool Equals(object compared)
     {
+      if (this == compared)
+      {
+        return true;
+      }
+      if((compared == null) || !this.GetType().Equals(compared.GetType()))
+      {
+        return false;
+      }
+      Item comparedItem = (Item)compared;
 
+      if (this.identifier == comparedItem.identifier)
+      {
+        return true;
+      }
+      
       //compare with Item.identifier
 
       return false;
       }
     }
-
   }
-}
