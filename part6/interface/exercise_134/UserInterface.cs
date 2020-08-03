@@ -58,6 +58,12 @@ namespace exercise_134
         Console.Write("*");
         stars--;
       }
+      
+    }
+    public void End()
+    {
+      Console.WriteLine("The average of points: " + register.AverageOfPoints());
+      Console.WriteLine("The average of grades: " + register.AverageOfGrades());
     }
   }
 }
