@@ -19,7 +19,11 @@ namespace exercise_136
     public int HowManyNames()
     {
       // Do something here
-      return 0;
+      //string name = person.ToString();
+      int namePiece = name.Split(" ").Length;
+     
+    
+      return namePiece;
     }
 
     public void GrowOlder()
@@ -33,3 +37,7 @@ namespace exercise_136
     }
   }
 }
+/*public int HowManyNames()
+    
+      //for (int i = 0; i < length; i++)*/
+    
