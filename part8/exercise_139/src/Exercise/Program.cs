@@ -13,7 +13,7 @@ namespace Exercise
       abbreviations.AddAbbreviation("i.e", "more precisely");
 
       string text = "e.g i.e etc. lol";
-
+    
       foreach (string part in text.Split(" "))
       {
         Console.WriteLine(abbreviations.FindExplanationFor(part));
