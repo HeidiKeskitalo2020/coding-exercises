@@ -19,12 +19,29 @@ namespace Exercise
 
     public override bool Equals(object compared)
     {
-      return false;
+      if (this == compared)
+      {
+        return true;
+      }
+      if ((compared == null) || !this.GetType().Equals(compared.GetType()))
+      {
+        return false;
+      }
+      else
+      {
+        LicensePlate comparedLisencePlate = (LicensePlate)compared;
+        return this.country == comparedLisencePlate.country 
+        && this.liNumber == comparedLisencePlate.liNumber;
+      }
     }
 
     public override int GetHashCode()
     {
-      return -1;
+      if (this.liNumber == null)
+      {
+        return -1;
+      }
+      return this.liNumber.GetHashCode();
     }
   }
 }
