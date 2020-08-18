@@ -59,9 +59,13 @@ namespace Exercise
     public override int GetHashCode()
     {
       // DO SOMETHING HERE
-      if (this.day == null)
+      if (this.day == -1)
       {
         return this.month;
+      }
+      else if (this.month == -1)
+      {
+        return this.year;
       }
 
       return this.day.GetHashCode();
