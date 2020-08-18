@@ -39,13 +39,32 @@ namespace Exercise
     public override bool Equals(object compared)
     {
       // DO SOMETHING HERE
-      return false;
+      if (this == compared)
+      {
+        return true;
+      }
+      if ((compared == null) || !this.GetType().Equals(compared.GetType()))
+      {
+        return false;
+      }
+      else
+      {
+        SimpleDate comparedSimpledate = (SimpleDate)compared;
+        return this.day == comparedSimpledate.day 
+        && this.month == comparedSimpledate.month 
+        && this.year == comparedSimpledate.year;
+      }
     }
 
     public override int GetHashCode()
     {
       // DO SOMETHING HERE
-      return -1;
+      if (this.day == null)
+      {
+        return this.month;
+      }
+
+      return this.day.GetHashCode();
     }
   }
 }
