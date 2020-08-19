@@ -66,11 +66,10 @@ namespace Exercise
           //list.Add(kvp.Value);
           Console.WriteLine(kvp.Value); 
         }
-        else 
-        {
-          list.Add(kvp.Value);
+         
+        list.Add(kvp.Value);
           
-        }
+      
         //Console.WriteLine(list);
       }
     }
