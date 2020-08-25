@@ -12,11 +12,32 @@ namespace Exercise
       this.name = name;
       this.wage = wage;
     }
-
+    
     public int CompareTo(Human another)
     {
+      if (another == null)
+      {
+        return 1;
+      }
+      if (this.wage == another.wage)
+      {
+        return 0;
+      }
+      else if (this.wage > another.wage)
+      {
+        return -1;
+      }
+      else
+      {
+        return 1;
+      }
+      /*if (this.name == another.name)
+      {
+        return this.Wage().CompareTo(another.Wage());
+      }
+      return this.name.CompareTo(another.name);*/
       // BEGIN SOLUTION
-      return 0;
+              //return 0;
       // END SOLUTION
     }
     
@@ -24,7 +45,7 @@ namespace Exercise
 
     public override string ToString()
     {
-      return name + " " + wage;
+      return this.name + " " + this.wage;
     }
   }
 }
