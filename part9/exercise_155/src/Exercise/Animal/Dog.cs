@@ -3,8 +3,8 @@ namespace Exercise
   using System;
   public class Dog : Animal, INoiseCapable
   {
-
-    public Dog() : this("")
+    //public string na
+    public Dog() : this("Dog")
     {
     }
 
@@ -14,10 +14,11 @@ namespace Exercise
 
     public void Bark()
     {
+      Console.WriteLine(this.name + " barks");
     }
     public void MakeNoise()
     {
+      Bark();
     }
-
   }
 }
