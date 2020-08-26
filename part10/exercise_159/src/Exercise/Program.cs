@@ -12,13 +12,13 @@ namespace Exercise
       Checker check = new Checker();
 
       Console.WriteLine(check.DayOfWeek("tue"));
-       Console.WriteLine(check.DayOfWeek("tues"));
+      Console.WriteLine(check.DayOfWeek("tues"));
 
       Console.WriteLine(check.AllVowels("aeiouaaeeioiouoiaoueaiaeiou"));
       Console.WriteLine(check.AllVowels("aeiouaaeeioiouoKiaoueaiaeiou"));
 
-      Console.WriteLine(check.TimeOfDay("23:23:59"));
-      Console.WriteLine(check.TimeOfDay("00:00:60"));
+      /*Console.WriteLine(check.TimeOfDay("23:23:59"));
+      Console.WriteLine(check.TimeOfDay("00:00:60"));*/
     }
   }
 }
